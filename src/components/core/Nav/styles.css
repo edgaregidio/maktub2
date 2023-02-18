@@ -1,0 +1,13 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+  background: var(--primary-color);
+  padding: 0 100px 0 50px;
+}
+
+.navbar img {
+  width: 300px;
+  height: auto;
+}

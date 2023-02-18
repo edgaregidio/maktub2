@@ -1,0 +1,56 @@
+.wrapper-accordion {
+  width: 100%;
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.accordion {
+  width: 80%;
+}
+
+.item {
+  background: #222;
+}
+.item + .item {
+  border-top: solid 1px #222;
+}
+.item-click {
+  background-color: #111;
+  padding: 1.6rem 1rem;
+}
+.item-click + .item-click {
+  border-top: solid 1px var(--second-color);
+}
+.item-click p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.title {
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: #222;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.content.show {
+  height: auto;
+  max-height: 50rem;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}

@@ -1,0 +1,40 @@
+.banner {
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  /* min-height: 80vh; */
+  width: 100%;
+  padding: 0;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.banner img {
+  position: relative;
+  width: 100%;
+  /*   
+  TIRAR COMENTARIO QUANDO TIVER
+  UM NOVO BANNER, ISSO GARANTE QUE 
+  A FOTO FICARA EM TODA A TELA: .
+  \/\/\/\/\/\/\/\/\/\/\/ */
+  /* min-height: 95vh; */
+  object-fit: initial;
+  padding: 0;
+}
+
+.banner .bnt-cardapio {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 150px; */
+}
+
+.banner .bnt-cardapio a {
+  text-align: center;
+  margin-top: 3.2rem;
+}
+.banner .bnt-cardapio a h1 {
+  color: #fec10f;
+  font-size: 1.8rem;
+}
