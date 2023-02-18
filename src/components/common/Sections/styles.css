@@ -1,0 +1,14 @@
+.wrapper-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 1rem;
+}
+
+.name-section p {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}

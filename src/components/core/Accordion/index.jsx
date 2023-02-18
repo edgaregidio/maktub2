@@ -50,6 +50,26 @@ const data = [
       {
         name: 'Drinks Autorais',
         id: 2
+      },
+      {
+        name: 'Shots',
+        id: 3
+      },
+      {
+        name: 'Soft Drinks',
+        id: 4
+      },
+      {
+        name: 'Garrafas e Doses',
+        id: 5
+      },
+      {
+        name: 'Bebidas Não Alcólicas',
+        id: 6
+      },
+      {
+        name: 'Cervejas',
+        id: 7
       }
     ]
   },
