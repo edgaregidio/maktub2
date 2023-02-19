@@ -9,9 +9,9 @@ import './styles.css'
 function Banner() {
   return (
     <>
-      <div class="banner">
+      <div className="banner">
         <img src={BannerMenu} />
-        <div class="bnt-cardapio">
+        <div className="bnt-cardapio">
           <a href="#">
             <h1>CARDÁPIO</h1>
             <Icon icon="material-symbols:keyboard-arrow-down-rounded" color='#fec10f' fontSize={52} />

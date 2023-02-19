@@ -18,6 +18,7 @@
 .item-click {
   background-color: #111;
   padding: 1.6rem 1rem;
+  cursor: pointer;
 }
 .item-click + .item-click {
   border-top: solid 1px var(--second-color);

@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
+import { v4 as uuidv4 } from 'uuid';
+
 
 import './styles.css'
 
-function Accordion() {
+function Accordion({handleSectionSelect}) {
 
   const [selected, setSelected] = useState(null)
 
@@ -12,6 +14,12 @@ function Accordion() {
     }
 
     setSelected(i)
+  }
+
+  const handleItemClick = (itemName) => {
+    console.log("itemName", itemName)
+    handleSectionSelect(itemName);
+    // setSelected(null);
   }
   
   return (
@@ -24,7 +32,7 @@ function Accordion() {
             </div>
             <div className={`content ${selected === i && 'show'}`}>
               {item.itens.map((menuItem, j) => (
-                <div className='item-click' key={menuItem.id}>
+                <div className='item-click' key={menuItem.id} onClick={() => handleItemClick(menuItem.name)}>
                   <p>{menuItem.name}</p>
                 </div>
               ))}
@@ -45,50 +53,33 @@ const data = [
     itens: [
       {
         name: 'Drinks Clássicos',
-        id: 1
+        id: uuidv4()
       },
       {
         name: 'Drinks Autorais',
-        id: 2
+        id: uuidv4()
       },
       {
         name: 'Shots',
-        id: 3
+        id: uuidv4()
       },
       {
         name: 'Soft Drinks',
-        id: 4
+        id: uuidv4()
       },
       {
         name: 'Garrafas e Doses',
-        id: 5
+        id: uuidv4()
       },
       {
         name: 'Bebidas Não Alcólicas',
-        id: 6
+        id: uuidv4()
       },
       {
         name: 'Cervejas',
-        id: 7
+        id: uuidv4()
       }
     ]
-  },
-  // {
-  //   menu: 'Diversos',
-  //   itens: [
-  //     {
-  //       name: 'Mangeira',
-  //       id: 3
-  //     },
-  //     {
-  //       name: 'Mascara',
-  //       id: 4
-  //     }
-  //     ,
-  //     {
-  //       name: 'Piteira',
-  //       id: 5
-  //     }
-  //   ]
-  // },
+  }
 ]
+

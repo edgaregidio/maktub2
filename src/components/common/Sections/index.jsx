@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import CardDrinks from '../../core/CardDrinks'
+import { scroller } from 'react-scroll';
+
 import { v4 as uuidv4 } from 'uuid';
 
 import GinTonica from '../../../assets/img/drinks/gintonica.jpeg'
@@ -68,11 +70,29 @@ import Preparo from '../../../assets/img/bebidas/preparo.jpg'
 import './styles.css'
 
 
-function Sections() {
+function Sections({selectedSection}) {
+  console.log("Section", selectedSection)
+
+  useEffect(() => {
+  if (selectedSection) {
+    const section = data.find((item) => item.section === selectedSection);
+
+    if (section) {
+      scroller.scrollTo(section.id_section, {
+        duration: 500,
+        delay: 0,
+        smooth: 'easeInOutQuart',
+        offset: -50,
+      });
+    }
+  }
+}, [selectedSection]);
   return (
     <>
       {data.map((section, i) => (
-        <div className="wrapper-section" key={section.id_section}>
+        // <div className="wrapper-section" key={section.id_section}>
+          <div className="wrapper-section" key={section.id_section} id={section.id_section}>
+
           <div className="name-section">
             <p>{section.section}</p>
           </div>
@@ -116,7 +136,7 @@ const data = [
     ],
   }, 
   {
-    section: 'Drinks Autorias',
+    section: 'Drinks Autorais',
     id_section: uuidv4(),
     itens: [
         {
@@ -399,7 +419,7 @@ const data = [
     ],
   },
   {
-    section: 'Bebidas não Alcólicas',
+    section: 'Bebidas Não Alcólicas',
     id_section: uuidv4(),
     itens: [
         {
@@ -593,5 +613,4 @@ const data = [
     ],
   }, 
 ]
- console.log("data", data)
  
