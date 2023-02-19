@@ -7,6 +7,7 @@ import Patronage from './components/common/Patronage';
 import Sections from './components/common/Sections'
 import Accordion from './components/core/Accordion'
 import Banner from './components/core/Banner'
+import Footer from './components/core/Footer';
 import Nav from './components/core/Nav'
 
 
@@ -71,6 +72,7 @@ function App() {
       <Notice />
       <Patronage />
       <Contact />
+      <Footer />
     </>
   )
 }
