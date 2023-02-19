@@ -56,6 +56,14 @@ import Sucolatadelvalle from '../../../assets/img/bebidas/sucolatadelvalle.jpg'
 import Honest from '../../../assets/img/bebidas/honest.jpg'
 import Aguatonica from '../../../assets/img/bebidas/aguatonica.jpg'
 import Aguadecocokerococo200 from '../../../assets/img/bebidas/aguadecocokerococo200.jpeg'
+import Heineken from '../../../assets/img/bebidas/heineken.jpg'
+import Heineken0 from '../../../assets/img/bebidas/heineken0.jpeg'
+import Sol from '../../../assets/img/bebidas/sol.jpg'
+import Budweiser from '../../../assets/img/bebidas/budweiser.jpg'
+import StellaArtois from '../../../assets/img/bebidas/stellaArtois.jpg'
+import Corona from '../../../assets/img/bebidas/corona.jpg'
+import Becks from '../../../assets/img/bebidas/becks.jpg'
+import Preparo from '../../../assets/img/bebidas/preparo.jpg'
 
 import './styles.css'
 
@@ -522,6 +530,68 @@ const data = [
         }
     ],
   },  
+  {
+    section: 'Cervejas',
+    id_section: uuidv4(),
+    itens: [
+        {
+          id_itens: uuidv4(),
+          img: Heineken,
+          title: 'Heineken Long Neck',
+          description: null,
+          price: '12,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: Heineken0,
+          title: 'Heineken Zero Long Neck',
+          description: null,
+          price: '12,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: Sol,
+          title: 'Sol Long Neck',
+          description: null,
+          price: '10,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: Budweiser,
+          title: 'Budweiser Long Neck',
+          description: null,
+          price: '10,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: StellaArtois,
+          title: 'Stella Artois Long Neck',
+          description: null,
+          price: '10,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: Corona,
+          title: 'Corona Long Neck',
+          description: null,
+          price: '10,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: Becks,
+          title: 'Becks Long Neck',
+          description: null,
+          price: '11,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: Preparo,
+          title: 'Preparo de Cozumel',
+          description: null,
+          price: '5,00'
+        }
+    ],
+  }, 
 ]
  console.log("data", data)
  
