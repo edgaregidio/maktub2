@@ -5,13 +5,26 @@
   /* min-height: 80vh; */
   width: 100%;
   padding: 0;
+  overflow: hidden;
+
   /* justify-content: center; */
   /* align-items: center; */
+}
+
+.wrapper-img {
+  background: red;
+  object-fit: cover;
+  max-height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner img {
   position: relative;
   width: 100%;
+  top: 5rem;
+
   /*   
   TIRAR COMENTARIO QUANDO TIVER
   UM NOVO BANNER, ISSO GARANTE QUE 

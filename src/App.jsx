@@ -45,28 +45,24 @@ const data = [
 ];
 
 function App() {
-
   const [selectedSection, setSelectedSection] = useState(null);
-  console.log("selectedSection", selectedSection)
 
   const handleSectionSelect = (sectionName) => {
-  console.log("sectionName", sectionName)
-  const section = data.find((item) =>
-    item.itens.find((menuItem) => menuItem.name === sectionName)
-  );
-  console.log("section", section)
+    const section = data.find((item) =>
+      item.itens.find((menuItem) => menuItem.name === sectionName)
+    );
 
-  if (section) {
-    const selectedItem = section.itens.find(item => item.name === sectionName);
-    setSelectedSection(selectedItem.name);
-  }
-};
+    if (section) {
+      const selectedItem = section.itens.find(item => item.name === sectionName);
+      setSelectedSection(selectedItem.name);
+    }
+  };
 
   return (
     <>
+      <ScrollToTop smooth viewBox="0 0 256 256" className="btnUp" color="#222" top={100} />  
       <Nav />
       <Banner />
-      <ScrollToTop smooth viewBox="0 0 256 256" className="btnUp" color="#222" />
       <Notice click={'Clique para interagir!'} />
       <Accordion handleSectionSelect={handleSectionSelect} />
       <Sections selectedSection={selectedSection} />

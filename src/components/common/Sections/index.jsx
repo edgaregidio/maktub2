@@ -71,7 +71,6 @@ import './styles.css'
 
 
 function Sections({selectedSection}) {
-  console.log("Section", selectedSection)
 
   useEffect(() => {
   if (selectedSection) {
@@ -90,9 +89,7 @@ function Sections({selectedSection}) {
   return (
     <>
       {data.map((section, i) => (
-        // <div className="wrapper-section" key={section.id_section}>
-          <div className="wrapper-section" key={section.id_section} id={section.id_section}>
-
+        <div className="wrapper-section" key={section.id_section} id={section.id_section}>
           <div className="name-section">
             <p>{section.section}</p>
           </div>

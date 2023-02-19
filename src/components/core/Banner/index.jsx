@@ -10,7 +10,9 @@ function Banner() {
   return (
     <>
       <div className="banner">
-        <img src={BannerMenu} />
+        <div className='wrapper-img'>
+          <img src={BannerMenu} />
+        </div>
         <div className="bnt-cardapio">
           <a href="#">
             <h1>CARDÁPIO</h1>
