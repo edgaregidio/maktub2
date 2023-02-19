@@ -24,7 +24,21 @@ import Way from '../../../assets/img/drinks/way.jpg'
 import Pinadescolada from '../../../assets/img/drinks/pinadescolada.jpeg'
 import Cherry from '../../../assets/img/drinks/cherry.jpeg'
 import Spicyold from '../../../assets/img/drinks/spicyold.jpeg'
-
+import Whiskycream from '../../../assets/img/drinks/whiskycream.jpg'
+import Royalsalute from '../../../assets/img/bebidas/royalsalute.jpeg'
+import Chivas18 from '../../../assets/img/bebidas/chivas18.jpg'
+import ChivasXV from '../../../assets/img/bebidas/chivasXV.jpg'
+import Chivas12 from '../../../assets/img/bebidas/chivas12.jpg'
+import Ballantines12 from '../../../assets/img/bebidas/ballantines12.jpg'
+import Ballantinesfinest from '../../../assets/img/bebidas/ballantinesfinest.png'
+import jinbeam from '../../../assets/img/bebidas/jinbeam.jpg'
+import Ginbeefeaterpink from '../../../assets/img/bebidas/ginbeefeaterpink.jpg'
+import Ginbeefeater from '../../../assets/img/bebidas/ginbeefeater.jpg'
+import AbsolutElyx750 from '../../../assets/img/bebidas/absolutElyx750.jpg'
+import Absolut from '../../../assets/img/bebidas/absolut.jpg'
+import Wyborowa2 from '../../../assets/img/bebidas/wyborowa2.jpg'
+import Licor43 from '../../../assets/img/bebidas/licor43.jpg'
+import Josecuervo from '../../../assets/img/bebidas/josecuervo.jpg'
 
 import './styles.css'
 
@@ -222,6 +236,156 @@ const data = [
         }
     ],
   }, 
+  {
+    section: 'Shots',
+    id_section: uuidv4(),
+    itens: [
+        {
+          id_itens: uuidv4(),
+          img: Whiskycream,
+          title: 'Shot Maktub',
+          description: 'Blend de creme, Baunilha Gourmet e Whisky.',
+          price: '14,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: null,
+          title: 'Longest Island (5 Shots)',
+          description: 'Tequila, Vodka Absolut, Gin Beefeater, Rum Havana 3 anos, xarope à escolha.',
+          price: '45,00'
+        }, 
+    ],
+  }, 
+  {
+    section: 'Soft Drinks',
+    id_section: uuidv4(),
+    itens: [
+        {
+          id_itens: uuidv4(),
+          img: null,
+          title: 'Soda Italiana',
+          description: 'Maracujá | Maçã Verde | Blueberry',
+          price: '12,00'
+        }, 
+    ],
+  }, 
+  {
+    section: 'Garrafas e Doses',
+    id_section: uuidv4(),
+    itens: [
+        {
+          id_itens: uuidv4(),
+          img: Royalsalute,
+          title: 'Royal Salute 21 anos',
+          description: null,
+          price: '1190,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: Chivas18,
+          title: 'Chivas 18 - 750 ml',
+          description: null,
+          price: '619,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: ChivasXV,
+          title: 'Chivas XV - 750 ml',
+          description: null,
+          price: '379,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: Chivas12,
+          title: 'Chivas 12 - 1l',
+          description: null,
+          price: '269,00 | R$ 15,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: Ballantines12,
+          title: 'Ballantines 12 - 1l',
+          description: null,
+          price: '239,00 | R$ 15,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: Ballantinesfinest,
+          title: 'Ballantines Finest - 1l',
+          description: null,
+          price: '199,00 | R$ 13,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: jinbeam,
+          title: 'Jin Beam - 1l',
+          description: null,
+          price: '219,00 | R$ 17,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: Ginbeefeaterpink,
+          title: 'Gin Beefeater Pink - 750 ml',
+          description: null,
+          price: '249,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: Ginbeefeater,
+          title: 'Gin Beefeater - 750 ml',
+          description: null,
+          price: '219,00 | R$ 17,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: AbsolutElyx750,
+          title: 'Absolut Elyx 750 ml',
+          description: null,
+          price: '249,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: Absolut,
+          title: 'Absolut - 1l',
+          description: null,
+          price: '199,00 | R$ 13,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: Wyborowa2,
+          title: 'Wyborowa - 1l',
+          description: null,
+          price: '130,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: Licor43,
+          title: 'Licor 43 - 700 ml',
+          description: null,
+          price: '279,00 | R$ 18,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: Josecuervo,
+          title: 'Tequila Jose Cuervo - 750 ml',
+          description: null,
+          price: '210,00 | R$ 16,00'
+        }, 
+    ],
+  },
+  // {
+  //   section: 'Bebidas não Alcólicas',
+  //   id_section: uuidv4(),
+  //   itens: [
+  //       {
+  //         id_itens: uuidv4(),
+  //         img: null,
+  //         title: 'Soda Italiana',
+  //         description: 'Maracujá | Maçã Verde | Blueberry',
+  //         price: '12,00'
+  //       }, 
+  //   ],
+  // },  
 ]
  console.log("data", data)
  
