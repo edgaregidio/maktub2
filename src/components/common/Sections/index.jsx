@@ -39,6 +39,23 @@ import Absolut from '../../../assets/img/bebidas/absolut.jpg'
 import Wyborowa2 from '../../../assets/img/bebidas/wyborowa2.jpg'
 import Licor43 from '../../../assets/img/bebidas/licor43.jpg'
 import Josecuervo from '../../../assets/img/bebidas/josecuervo.jpg'
+import Agua from '../../../assets/img/bebidas/agua.jpg'
+import Refrigerantes from '../../../assets/img/bebidas/refrigerantes.jpg'
+import Extrapower270 from '../../../assets/img/bebidas/extrapower270.jpg'
+import Extrapower473 from '../../../assets/img/bebidas/extrapower473.jpg'
+import Redbull from '../../../assets/img/bebidas/redbull.jpg'
+import Redbulltropical from '../../../assets/img/bebidas/redbulltropical.jpg'
+import Redbullmelancia from '../../../assets/img/bebidas/redbullmelancia.png'
+import Redbullcoco1 from '../../../assets/img/bebidas/redbullcoco1.jpeg'
+import Redbullsugar from '../../../assets/img/bebidas/redbullsugar.webp'
+import Stpierre from '../../../assets/img/stpierre.webp'
+import Stpierrepink from '../../../assets/img/stpierrepink.jpeg'
+import H2o from '../../../assets/img/bebidas/h2o.jpg'
+import Guaranabrasil from '../../../assets/img/bebidas/guaranabrasil.jpg'
+import Sucolatadelvalle from '../../../assets/img/bebidas/sucolatadelvalle.jpg'
+import Honest from '../../../assets/img/bebidas/honest.jpg'
+import Aguatonica from '../../../assets/img/bebidas/aguatonica.jpg'
+import Aguadecocokerococo200 from '../../../assets/img/bebidas/aguadecocokerococo200.jpeg'
 
 import './styles.css'
 
@@ -373,19 +390,138 @@ const data = [
         }, 
     ],
   },
-  // {
-  //   section: 'Bebidas não Alcólicas',
-  //   id_section: uuidv4(),
-  //   itens: [
-  //       {
-  //         id_itens: uuidv4(),
-  //         img: null,
-  //         title: 'Soda Italiana',
-  //         description: 'Maracujá | Maçã Verde | Blueberry',
-  //         price: '12,00'
-  //       }, 
-  //   ],
-  // },  
+  {
+    section: 'Bebidas não Alcólicas',
+    id_section: uuidv4(),
+    itens: [
+        {
+          id_itens: uuidv4(),
+          img: Agua,
+          title: 'Água Mineral',
+          description: null,
+          price: '3,00'
+        },
+        {
+          id_itens: uuidv4(),
+          img: Agua,
+          title: 'Água com Gás',
+          description: null,
+          price: '4,00'
+        },
+        {
+          id_itens: uuidv4(),
+          img: Refrigerantes,
+          title: 'Refrigerantes Lata',
+          description: null,
+          price: '5,00'
+        },
+        {
+          id_itens: uuidv4(),
+          img: Extrapower270,
+          title: 'Extra Power 273ml',
+          description: null,
+          price: '8,00'
+        },
+        {
+          id_itens: uuidv4(),
+          img: Extrapower473,
+          title: 'Extra Power 470ml',
+          description: null,
+          price: '13,00'
+        },
+        {
+          id_itens: uuidv4(),
+          img: Redbull,
+          title: 'Red Bull Tradicional',
+          description: null,
+          price: '14,00'
+        },
+        {
+          id_itens: uuidv4(),
+          img: Redbulltropical,
+          title: 'Red Bull Tropical',
+          description: null,
+          price: '14,00'
+        },
+        {
+          id_itens: uuidv4(),
+          img: Redbullmelancia,
+          title: 'Red Bull Melancia',
+          description: null,
+          price: '14,00'
+        },
+        {
+          id_itens: uuidv4(),
+          img: Redbullcoco1,
+          title: 'Red Bull Coco e Açai',
+          description: null,
+          price: '14,00'
+        },
+        {
+          id_itens: uuidv4(),
+          img: Redbullsugar,
+          title: 'Red Bull Sugarfree',
+          description: null,
+          price: '14,00'
+        },
+        {
+          id_itens: uuidv4(),
+          img: Stpierre,
+          title: 'St Pierre Red Mint',
+          description: null,
+          price: '8,00'
+        },
+        {
+          id_itens: uuidv4(),
+          img: Stpierrepink,
+          title: 'St Pierre Pink Lemonade',
+          description: null,
+          price: '8,00'
+        },
+        {
+          id_itens: uuidv4(),
+          img: H2o,
+          title: 'H2O',
+          description: null,
+          price: '5,00'
+        },
+        {
+          id_itens: uuidv4(),
+          img: Guaranabrasil,
+          title: 'Guaraná Brasil',
+          description: null,
+          price: '5,00'
+        },
+        {
+          id_itens: uuidv4(),
+          img: Sucolatadelvalle,
+          title: 'Suco Lata',
+          description: null,
+          price: '5,00'
+        },
+        {
+          id_itens: uuidv4(),
+          img: Honest,
+          title: 'Suco Da Fruta Honest',
+          description: null,
+          price: '7,00'
+        },
+        {
+          id_itens: uuidv4(),
+          img: Aguatonica,
+          title: 'Água Tônica Antárctica',
+          description: null,
+          price: '5,00'
+        },
+        {
+          id_itens: uuidv4(),
+          img: Aguadecocokerococo200,
+          title: 'Água de Coco P.',
+          description: null,
+          price: '5,00'
+        }
+    ],
+  },  
 ]
  console.log("data", data)
  
