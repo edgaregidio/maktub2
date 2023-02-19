@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import ScrollToTop from 'react-scroll-to-top'
 import { v4 as uuidv4 } from 'uuid';
+import Contact from './components/common/Contact';
 import Notice from './components/common/Notice'
+import Patronage from './components/common/Patronage';
 import Sections from './components/common/Sections'
 import Accordion from './components/core/Accordion'
 import Banner from './components/core/Banner'
@@ -66,6 +68,9 @@ function App() {
       <Notice click={'Clique para interagir!'} />
       <Accordion handleSectionSelect={handleSectionSelect} />
       <Sections selectedSection={selectedSection} />
+      <Notice />
+      <Patronage />
+      <Contact />
     </>
   )
 }

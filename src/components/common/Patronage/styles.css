@@ -1,0 +1,14 @@
+.imgPartners {
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.imgPartners img {
+  object-fit: contain;
+  height: 300px;
+  width: 100%;
+}
