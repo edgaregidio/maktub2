@@ -41,6 +41,8 @@ import Absolut from '../../../assets/img/bebidas/absolut.jpg'
 import Wyborowa2 from '../../../assets/img/bebidas/wyborowa2.jpg'
 import Licor43 from '../../../assets/img/bebidas/licor43.jpg'
 import Josecuervo from '../../../assets/img/bebidas/josecuervo.jpg'
+import Buchanan from '../../../assets/img/bebidas/buchanan.png'
+import JackDaniels from '../../../assets/img/bebidas/jackdaniels.png'
 import Agua from '../../../assets/img/bebidas/agua.jpg'
 import Refrigerantes from '../../../assets/img/bebidas/refrigerantes.jpg'
 import Extrapower270 from '../../../assets/img/bebidas/extrapower270.jpg'
@@ -340,8 +342,8 @@ const data = [
           id_itens: uuidv4(),
           img: Chivas12,
           title: 'Chivas 12 - 1l',
-          description: null,
-          price: '269,00 | R$ 15,00'
+          description: 'Combo com 6 energético',
+          price: '290,00 | Combo - R$335,00'
         }, 
         {
           id_itens: uuidv4(),
@@ -354,8 +356,8 @@ const data = [
           id_itens: uuidv4(),
           img: Ballantinesfinest,
           title: 'Ballantines Finest - 1l',
-          description: null,
-          price: '199,00 | R$ 13,00'
+          description: `Combo com 6 Red Bull - Dose R$ 13,00`,
+          price: '199,00 | Combo - R$ 275,00'
         }, 
         {
           id_itens: uuidv4(),
@@ -389,8 +391,8 @@ const data = [
           id_itens: uuidv4(),
           img: Absolut,
           title: 'Absolut - 1l',
-          description: null,
-          price: '199,00 | R$ 13,00'
+          description: 'Combo com 6 ST. Pierre',
+          price: '199,00 | Combo - R$ 240,00'
         }, 
         {
           id_itens: uuidv4(),
@@ -412,6 +414,20 @@ const data = [
           title: 'Tequila Jose Cuervo - 750 ml',
           description: null,
           price: '210,00 | R$ 16,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: Buchanan,
+          title: "Buchanan's 12 anos - 750 ml",
+          description: 'Combo com 5 energético',
+          price: '280,00 | Combo - R$ 330,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: JackDaniels,
+          title: "Whisky Jack Daniel's Garrafa 1 Litro",
+          description: 'Combo com 5 energético',
+          price: '280,00 | Combo - R$ 325,00'
         }, 
     ],
   },
