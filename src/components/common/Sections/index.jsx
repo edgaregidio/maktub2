@@ -43,6 +43,10 @@ import Licor43 from '../../../assets/img/bebidas/licor43.jpg'
 import Josecuervo from '../../../assets/img/bebidas/josecuervo.jpg'
 import Buchanan from '../../../assets/img/bebidas/buchanan.png'
 import JackDaniels from '../../../assets/img/bebidas/jackdaniels.png'
+import Tanqueray from '../../../assets/img/bebidas/tanqueray.png'
+import Blacklabel from '../../../assets/img/bebidas/blacklabel.png'
+import Oldpar from '../../../assets/img/bebidas/oldpar.png'
+import Goldlabel from '../../../assets/img/bebidas/goldlabel.png'
 import Agua from '../../../assets/img/bebidas/agua.jpg'
 import Refrigerantes from '../../../assets/img/bebidas/refrigerantes.jpg'
 import Extrapower270 from '../../../assets/img/bebidas/extrapower270.jpg'
@@ -425,9 +429,37 @@ const data = [
         {
           id_itens: uuidv4(),
           img: JackDaniels,
-          title: "Whisky Jack Daniel's Garrafa 1 Litro",
+          title: "Jack Daniel's 1l",
           description: 'Combo com 5 energético',
           price: '280,00 | Combo - R$ 325,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: Tanqueray,
+          title: "Gin Tanqueray Imported 750ml",
+          description: 'Combo com 5 Sant Pierre',
+          price: '230,00 | Combo - R$ 250,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: Blacklabel,
+          title: "Black Label 1l",
+          description: 'Combo com 6 Red Bull',
+          price: '300,00 | Combo - R$ 380,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: Oldpar,
+          title: "Whisky Old Parr",
+          description: 'Combo 5 energéticos',
+          price: '290,00 | Combo - R$ 345,00'
+        }, 
+        {
+          id_itens: uuidv4(),
+          img: Goldlabel,
+          title: "Gold Label 1l",
+          description: 'Combo com 5 energético',
+          price: '420,00 | Combo - R$ 480,00'
         }, 
     ],
   },
@@ -454,7 +486,7 @@ const data = [
           img: Refrigerantes,
           title: 'Refrigerantes Lata',
           description: null,
-          price: '5,00'
+          price: '6,00'
         },
         {
           id_itens: uuidv4(),
@@ -482,7 +514,7 @@ const data = [
           img: Redbulltropical,
           title: 'Red Bull Tropical',
           description: null,
-          price: '14,00'
+          price: '16,00'
         },
         {
           id_itens: uuidv4(),
@@ -572,7 +604,7 @@ const data = [
           img: Heineken,
           title: 'Heineken Long Neck',
           description: null,
-          price: '12,00'
+          price: '14,00'
         }, 
         {
           id_itens: uuidv4(),
@@ -586,14 +618,14 @@ const data = [
           img: Sol,
           title: 'Sol Long Neck',
           description: null,
-          price: '10,00'
+          price: '12,00'
         }, 
         {
           id_itens: uuidv4(),
           img: Budweiser,
           title: 'Budweiser Long Neck',
           description: null,
-          price: '10,00'
+          price: '12,00'
         }, 
         {
           id_itens: uuidv4(),
