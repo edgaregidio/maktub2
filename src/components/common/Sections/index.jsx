@@ -198,13 +198,13 @@ const data = [
           description: 'Vodka, Maça Verde e Refrigerante de Limão.',
           price: '26,00'
         }, 
-        {
-          id_itens: uuidv4(),
-          img: Pinkice2,
-          title: 'Pink Ice',
-          description: 'Smirnoff Ice, Creme de morango e Yakult.',
-          price: '35,00'
-        }, 
+        // {
+        //   id_itens: uuidv4(),
+        //   img: Pinkice2,
+        //   title: 'Pink Ice',
+        //   description: 'Smirnoff Ice, Creme de morango e Yakult.',
+        //   price: '35,00'
+        // }, 
         {
           id_itens: uuidv4(),
           img: Paixaotropical,
@@ -288,13 +288,13 @@ const data = [
     section: 'Shots',
     id_section: uuidv4(),
     itens: [
-        {
-          id_itens: uuidv4(),
-          img: Whiskycream,
-          title: 'Shot Maktub',
-          description: 'Blend de creme, Baunilha Gourmet e Whisky.',
-          price: '14,00'
-        }, 
+        // {
+        //   id_itens: uuidv4(),
+        //   img: Whiskycream,
+        //   title: 'Shot Maktub',
+        //   description: 'Blend de creme, Baunilha Gourmet e Whisky.',
+        //   price: '14,00'
+        // }, 
         {
           id_itens: uuidv4(),
           img: null,
@@ -398,13 +398,13 @@ const data = [
           description: 'Combo com 6 ST. Pierre',
           price: '199,00 | Combo - R$ 240,00'
         }, 
-        {
-          id_itens: uuidv4(),
-          img: Wyborowa2,
-          title: 'Wyborowa - 1l',
-          description: null,
-          price: '130,00'
-        }, 
+        // {
+        //   id_itens: uuidv4(),
+        //   img: Wyborowa2,
+        //   title: 'Wyborowa - 1l',
+        //   description: null,
+        //   price: '130,00'
+        // }, 
         {
           id_itens: uuidv4(),
           img: Licor43,
@@ -488,20 +488,20 @@ const data = [
           description: null,
           price: '6,00'
         },
-        {
-          id_itens: uuidv4(),
-          img: Extrapower270,
-          title: 'Extra Power 273ml',
-          description: null,
-          price: '8,00'
-        },
-        {
-          id_itens: uuidv4(),
-          img: Extrapower473,
-          title: 'Extra Power 470ml',
-          description: null,
-          price: '13,00'
-        },
+        // {
+        //   id_itens: uuidv4(),
+        //   img: Extrapower270,
+        //   title: 'Extra Power 273ml',
+        //   description: null,
+        //   price: '8,00'
+        // },
+        // {
+        //   id_itens: uuidv4(),
+        //   img: Extrapower473,
+        //   title: 'Extra Power 470ml',
+        //   description: null,
+        //   price: '13,00'
+        // },
         {
           id_itens: uuidv4(),
           img: Redbull,
@@ -572,13 +572,13 @@ const data = [
           description: null,
           price: '5,00'
         },
-        {
-          id_itens: uuidv4(),
-          img: Honest,
-          title: 'Suco Da Fruta Honest',
-          description: null,
-          price: '7,00'
-        },
+        // {
+        //   id_itens: uuidv4(),
+        //   img: Honest,
+        //   title: 'Suco Da Fruta Honest',
+        //   description: null,
+        //   price: '7,00'
+        // },
         {
           id_itens: uuidv4(),
           img: Aguatonica,
@@ -627,27 +627,27 @@ const data = [
           description: null,
           price: '12,00'
         }, 
-        {
-          id_itens: uuidv4(),
-          img: StellaArtois,
-          title: 'Stella Artois Long Neck',
-          description: null,
-          price: '10,00'
-        }, 
-        {
-          id_itens: uuidv4(),
-          img: Corona,
-          title: 'Corona Long Neck',
-          description: null,
-          price: '10,00'
-        }, 
-        {
-          id_itens: uuidv4(),
-          img: Becks,
-          title: 'Becks Long Neck',
-          description: null,
-          price: '11,00'
-        }, 
+        // {
+        //   id_itens: uuidv4(),
+        //   img: StellaArtois,
+        //   title: 'Stella Artois Long Neck',
+        //   description: null,
+        //   price: '10,00'
+        // }, 
+        // {
+        //   id_itens: uuidv4(),
+        //   img: Corona,
+        //   title: 'Corona Long Neck',
+        //   description: null,
+        //   price: '10,00'
+        // }, 
+        // {
+        //   id_itens: uuidv4(),
+        //   img: Becks,
+        //   title: 'Becks Long Neck',
+        //   description: null,
+        //   price: '11,00'
+        // }, 
         {
           id_itens: uuidv4(),
           img: Preparo,
