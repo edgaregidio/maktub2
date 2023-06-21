@@ -1,79 +1,70 @@
-import React, { useEffect } from 'react'
-import CardDrinks from '../../core/CardDrinks'
+import React, { useEffect } from 'react';
 import { scroller } from 'react-scroll';
+import CardDrinks from '../../core/CardDrinks';
 
 import { v4 as uuidv4 } from 'uuid';
 
-import GinTonica from '../../../assets/img/drinks/gintonica.jpeg'
-import MoscowMule from '../../../assets/img/drinks/moscow.jpeg'
-import Tentacao from '../../../assets/img/drinks/tentacao.jpeg'
-import Vivalavida from '../../../assets/img/drinks/vivalavida.jpeg'
-import Dosedesejo from '../../../assets/img/drinks/dosedesejo.jpeg'
-import Foradalei from '../../../assets/img/drinks/foradalei.jpeg'
-import Sunset from '../../../assets/img/drinks/sunset.jpeg'
-import Caribe from '../../../assets/img/drinks/caribe.jpeg'
-import Caipirinhamaktub from '../../../assets/img/drinks/caipirinhamaktub.jpeg'
-import Applegreen from '../../../assets/img/drinks/applegreen.jpeg'
-import Pinkice2 from '../../../assets/img/drinks/pinkice2.jpeg'
-import Paixaotropical from '../../../assets/img/drinks/paixaotropical.jpeg'
-import Ginrose from '../../../assets/img/drinks/ginrose.jpeg'
-import Passiflora from '../../../assets/img/drinks/passiflora.jpeg'
-import Aloha from '../../../assets/img/drinks/aloha.jpeg'
-import Milano from '../../../assets/img/drinks/milano.jpeg'
-import Cheirobom from '../../../assets/img/drinks/cheirobom.jpeg'
-import Alua from '../../../assets/img/drinks/alua.jpeg'
-import Way from '../../../assets/img/drinks/way.jpg'
-import Pinadescolada from '../../../assets/img/drinks/pinadescolada.jpeg'
-import Cherry from '../../../assets/img/drinks/cherry.jpeg'
-import Spicyold from '../../../assets/img/drinks/spicyold.jpeg'
-import Whiskycream from '../../../assets/img/drinks/whiskycream.jpg'
-import Royalsalute from '../../../assets/img/bebidas/royalsalute.jpeg'
-import Chivas18 from '../../../assets/img/bebidas/chivas18.jpg'
-import ChivasXV from '../../../assets/img/bebidas/chivasXV.jpg'
-import Chivas12 from '../../../assets/img/bebidas/chivas12.jpg'
-import Ballantines12 from '../../../assets/img/bebidas/ballantines12.jpg'
-import Ballantinesfinest from '../../../assets/img/bebidas/ballantinesfinest.png'
-import jinbeam from '../../../assets/img/bebidas/jinbeam.jpg'
-import Ginbeefeaterpink from '../../../assets/img/bebidas/ginbeefeaterpink.jpg'
-import Ginbeefeater from '../../../assets/img/bebidas/ginbeefeater.jpg'
-import AbsolutElyx750 from '../../../assets/img/bebidas/absolutElyx750.jpg'
-import Absolut from '../../../assets/img/bebidas/absolut.jpg'
-import Wyborowa2 from '../../../assets/img/bebidas/wyborowa2.jpg'
-import Licor43 from '../../../assets/img/bebidas/licor43.jpg'
-import Josecuervo from '../../../assets/img/bebidas/josecuervo.jpg'
-import Buchanan from '../../../assets/img/bebidas/buchanan.png'
-import JackDaniels from '../../../assets/img/bebidas/jackdaniels.png'
-import Tanqueray from '../../../assets/img/bebidas/tanqueray.png'
-import Blacklabel from '../../../assets/img/bebidas/blacklabel.png'
-import Oldpar from '../../../assets/img/bebidas/oldpar.png'
-import Goldlabel from '../../../assets/img/bebidas/goldlabel.png'
-import Agua from '../../../assets/img/bebidas/agua.jpg'
-import Refrigerantes from '../../../assets/img/bebidas/refrigerantes.jpg'
-import Extrapower270 from '../../../assets/img/bebidas/extrapower270.jpg'
-import Extrapower473 from '../../../assets/img/bebidas/extrapower473.jpg'
-import Redbull from '../../../assets/img/bebidas/redbull.jpg'
-import Redbulltropical from '../../../assets/img/bebidas/redbulltropical.jpg'
-import Redbullmelancia from '../../../assets/img/bebidas/redbullmelancia.png'
-import Redbullcoco1 from '../../../assets/img/bebidas/redbullcoco1.jpeg'
-import Redbullsugar from '../../../assets/img/bebidas/redbullsugar.webp'
-import Stpierre from '../../../assets/img/stpierre.webp'
-import Stpierrepink from '../../../assets/img/stpierrepink.jpeg'
-import H2o from '../../../assets/img/bebidas/h2o.jpg'
-import Guaranabrasil from '../../../assets/img/bebidas/guaranabrasil.jpg'
-import Sucolatadelvalle from '../../../assets/img/bebidas/sucolatadelvalle.jpg'
-import Honest from '../../../assets/img/bebidas/honest.jpg'
-import Aguatonica from '../../../assets/img/bebidas/aguatonica.jpg'
-import Aguadecocokerococo200 from '../../../assets/img/bebidas/aguadecocokerococo200.jpeg'
-import Heineken from '../../../assets/img/bebidas/heineken.jpg'
-import Heineken0 from '../../../assets/img/bebidas/heineken0.jpeg'
-import Sol from '../../../assets/img/bebidas/sol.jpg'
-import Budweiser from '../../../assets/img/bebidas/budweiser.jpg'
-import StellaArtois from '../../../assets/img/bebidas/stellaArtois.jpg'
-import Corona from '../../../assets/img/bebidas/corona.jpg'
-import Becks from '../../../assets/img/bebidas/becks.jpg'
-import Preparo from '../../../assets/img/bebidas/preparo.jpg'
+import Absolut from '../../../assets/img/bebidas/absolut.jpg';
+import AbsolutElyx750 from '../../../assets/img/bebidas/absolutElyx750.jpg';
+import Agua from '../../../assets/img/bebidas/agua.jpg';
+import Aguadecocokerococo200 from '../../../assets/img/bebidas/aguadecocokerococo200.jpeg';
+import Aguatonica from '../../../assets/img/bebidas/aguatonica.jpg';
+import Ballantines12 from '../../../assets/img/bebidas/ballantines12.jpg';
+import Ballantinesfinest from '../../../assets/img/bebidas/ballantinesfinest.png';
+import Blacklabel from '../../../assets/img/bebidas/blacklabel.png';
+import Buchanan from '../../../assets/img/bebidas/buchanan.png';
+import Budweiser from '../../../assets/img/bebidas/budweiser.jpg';
+import Chivas12 from '../../../assets/img/bebidas/chivas12.jpg';
+import Chivas18 from '../../../assets/img/bebidas/chivas18.jpg';
+import ChivasXV from '../../../assets/img/bebidas/chivasXV.jpg';
+import Ginbeefeater from '../../../assets/img/bebidas/ginbeefeater.jpg';
+import Ginbeefeaterpink from '../../../assets/img/bebidas/ginbeefeaterpink.jpg';
+import Goldlabel from '../../../assets/img/bebidas/goldlabel.png';
+import H2o from '../../../assets/img/bebidas/h2o.jpg';
+import Heineken from '../../../assets/img/bebidas/heineken.jpg';
+import Heineken0 from '../../../assets/img/bebidas/heineken0.jpeg';
+import JackDaniels from '../../../assets/img/bebidas/jackdaniels.png';
+import jinbeam from '../../../assets/img/bebidas/jinbeam.jpg';
+import Josecuervo from '../../../assets/img/bebidas/josecuervo.jpg';
+import Licor43 from '../../../assets/img/bebidas/licor43.jpg';
+import Oldpar from '../../../assets/img/bebidas/oldpar.png';
+import Preparo from '../../../assets/img/bebidas/preparo.jpg';
+import Redbull from '../../../assets/img/bebidas/redbull.jpg';
+import Redbullcoco1 from '../../../assets/img/bebidas/redbullcoco1.jpeg';
+import Redbullmelancia from '../../../assets/img/bebidas/redbullmelancia.png';
+import Redbullsugar from '../../../assets/img/bebidas/redbullsugar.webp';
+import Redbulltropical from '../../../assets/img/bebidas/redbulltropical.jpg';
+import Refrigerantes from '../../../assets/img/bebidas/refrigerantes.jpg';
+import Royalsalute from '../../../assets/img/bebidas/royalsalute.jpeg';
+import SmirnofIce from '../../../assets/img/bebidas/smirnofice.png';
+import Sol from '../../../assets/img/bebidas/sol.jpg';
+import Sucolatadelvalle from '../../../assets/img/bebidas/sucolatadelvalle.jpg';
+import Tanqueray from '../../../assets/img/bebidas/tanqueray.png';
+import Aloha from '../../../assets/img/drinks/aloha.jpeg';
+import Alua from '../../../assets/img/drinks/alua.jpeg';
+import Applegreen from '../../../assets/img/drinks/applegreen.jpeg';
+import Caipirinhamaktub from '../../../assets/img/drinks/caipirinhamaktub.jpeg';
+import Caribe from '../../../assets/img/drinks/caribe.jpeg';
+import Cheirobom from '../../../assets/img/drinks/cheirobom.jpeg';
+import Cherry from '../../../assets/img/drinks/cherry.jpeg';
+// import Dosedesejo from '../../../assets/img/drinks/dosedesejo.jpeg';
+import Foradalei from '../../../assets/img/drinks/foradalei.jpeg';
+import Ginrose from '../../../assets/img/drinks/ginrose.jpeg';
+import GinTonica from '../../../assets/img/drinks/gintonica.jpeg';
+import Milano from '../../../assets/img/drinks/milano.jpeg';
+import MoscowMule from '../../../assets/img/drinks/moscow.jpeg';
+import Paixaotropical from '../../../assets/img/drinks/paixaotropical.jpeg';
+import Passiflora from '../../../assets/img/drinks/passiflora.jpeg';
+import Pinadescolada from '../../../assets/img/drinks/pinadescolada.jpeg';
+import Spicyold from '../../../assets/img/drinks/spicyold.jpeg';
+import Sunset from '../../../assets/img/drinks/sunset.jpeg';
+import Tentacao from '../../../assets/img/drinks/tentacao.jpeg';
+import Vivalavida from '../../../assets/img/drinks/vivalavida.jpeg';
+import Way from '../../../assets/img/drinks/way.jpg';
+import Stpierre from '../../../assets/img/stpierre.webp';
+import Stpierrepink from '../../../assets/img/stpierrepink.jpeg';
 
-import './styles.css'
+import './styles.css';
 
 
 function Sections({selectedSection}) {
@@ -156,13 +147,13 @@ const data = [
           description: 'Abacaxi, rum de coco, limão e açucar.',
           price: '29,00'
         }, 
-        {
-          id_itens: uuidv4(),
-          img: Dosedesejo,
-          title: 'Dose Desejo',
-          description: 'Absolut, limão, laranja e leite condensado.',
-          price: '29,00'
-        }, 
+        // {
+        //   id_itens: uuidv4(),
+        //   img: Dosedesejo,
+        //   title: 'Dose Desejo',
+        //   description: 'Absolut, limão, laranja e leite condensado.',
+        //   price: '29,00'
+        // }, 
         {
           id_itens: uuidv4(),
           img: Foradalei,
@@ -323,6 +314,13 @@ const data = [
     itens: [
         {
           id_itens: uuidv4(),
+          img: SmirnofIce,
+          title: "Smirnof Ice",
+          description: '',
+          price: '12,00'
+        }, 
+        {
+          id_itens: uuidv4(),
           img: Royalsalute,
           title: 'Royal Salute 21 anos',
           description: null,
@@ -346,7 +344,7 @@ const data = [
           id_itens: uuidv4(),
           img: Chivas12,
           title: 'Chivas 12 - 1l',
-          description: 'Combo com 6 energético',
+          description: 'Combo com 5 energético',
           price: '290,00 | Combo - R$335,00'
         }, 
         {
@@ -360,7 +358,7 @@ const data = [
           id_itens: uuidv4(),
           img: Ballantinesfinest,
           title: 'Ballantines Finest - 1l',
-          description: `Combo com 6 Red Bull - Dose R$ 13,00`,
+          description: `Combo com 5 Red Bull - Dose R$ 13,00`,
           price: '199,00 | Combo - R$ 275,00'
         }, 
         {
@@ -460,7 +458,7 @@ const data = [
           title: "Gold Label 1l",
           description: 'Combo com 5 energético',
           price: '420,00 | Combo - R$ 480,00'
-        }, 
+        },
     ],
   },
   {
@@ -507,7 +505,7 @@ const data = [
           img: Redbull,
           title: 'Red Bull Tradicional',
           description: null,
-          price: '14,00'
+          price: '16,00'
         },
         {
           id_itens: uuidv4(),
@@ -521,21 +519,21 @@ const data = [
           img: Redbullmelancia,
           title: 'Red Bull Melancia',
           description: null,
-          price: '14,00'
+          price: '16,00'
         },
         {
           id_itens: uuidv4(),
           img: Redbullcoco1,
           title: 'Red Bull Coco e Açai',
           description: null,
-          price: '14,00'
+          price: '16,00'
         },
         {
           id_itens: uuidv4(),
           img: Redbullsugar,
           title: 'Red Bull Sugarfree',
           description: null,
-          price: '14,00'
+          price: '16,00'
         },
         {
           id_itens: uuidv4(),
@@ -558,13 +556,13 @@ const data = [
           description: null,
           price: '5,00'
         },
-        {
-          id_itens: uuidv4(),
-          img: Guaranabrasil,
-          title: 'Guaraná Brasil',
-          description: null,
-          price: '5,00'
-        },
+        // {
+        //   id_itens: uuidv4(),
+        //   img: Guaranabrasil,
+        //   title: 'Guaraná Brasil',
+        //   description: null,
+        //   price: '5,00'
+        // },
         {
           id_itens: uuidv4(),
           img: Sucolatadelvalle,
